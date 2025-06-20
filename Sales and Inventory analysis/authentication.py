@@ -27,13 +27,13 @@ def user_choice_two():
             surname=input("Please insert your surname: ")
             user_name=input("Please insert your username: ")
             password=input("Please insert your password: ")
-        except KeyboardInterrupt:
+    except KeyboardInterrupt:
             print("Input was interrupted by user.")
-        except Exception as e:
+    except Exception as e:
             print(f"An unexpected error occurred: {e}")
-        except ValueError:
+    except ValueError:
             print("Please enter a valid character or word.")
-        except EOFError:
+    except EOFError:
             print("Control commands are not allowed e.g(CRTL+D,CRTL+Z)")
     
     
